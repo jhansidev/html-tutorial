@@ -46,7 +46,8 @@ p{
 
 .logo
 {
-	color: white;
+	color: seagreen;
+	font-size: 30px;
 	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 	
 }
@@ -64,7 +65,7 @@ p{
 }
 
 /* Change the link color to #111 (black) on hover  */
-li a:hover {
+nav ul li a:hover {
   color: #00b6ce;
   text-decoration-line: underline;
 } 
@@ -79,5 +80,110 @@ li a:hover {
 .roundimg{
 border-radius: 60%;
 }
+
+
+.advt img{
+	padding: 20px;
+	width: 100%;
+}
+
+
+
+/* .clothing-menu{
+     display: block;
+    position: absolute;
+    background-color: whitesmoke;
+    margin-top: 10px;
+	
+}
+
+
+.clothing-menu ul{
+
+	display: block;
+	margin: 10px;
+
+}
+
+.clothing-menu ul li {
+	width: 120px;
+	padding: 10px;
+	border-bottom: 1px;
+	background: transparent;
+	border-radius: 0;
+	text-align: left;
+}
+ */
+
+
+ .ul-reset {
+	padding-left: 0;
+   margin-top: 0;
+   margin-bottom: 0;
+	list-style: none;
+}
+
+/* mega menu styling */
+.mega-menu {
+	background: whitesmoke;
+  	display: none;
+  	left: 450px;
+  	position: absolute;
+  	text-align: center;
+  	margin-top: 20px;
+  	width: relative;
+}
+
+.mega-menu h3 {color: teal;}
+
+.mega-menu ul {
+	float: left;
+	margin-top: 20px;
+  	margin-bottom: 10px;
+  	margin-right: 30px;
+    width: 200px;
+}
+
+.mega-menu ul:last-child {margin-right: 0;} 
+.mega-menu a {
+	border-bottom: 1px dotted #ddd;
+  	color: black;
+  	display: block;
+  	padding: 10px 0px;
+
+}
+
+.mega-menu a:hover  {
+color: #00b6ce;
+  text-decoration-line: underline;} 
+
+/* Dropable class styles */
+
+.droppable {position: static;}
+.droppable > a:after {
+	content: "\f05"; 
+  	font-family: FontAwesome;
+  	font-size: 12px;
+  	padding-left: 6px;
+  	position: relative;
+  	top: -1px;
+}
+.droppable:hover .mega-menu {display: flex;}
+
+/*.mega-menu:hover  .mega-menu ul li{display: block;} 
+
+
+/* #container cf div Clearfix
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+   display: table; /* 2 */
+}
+.cf:after {clear: both;}
+
+
+
 
 
