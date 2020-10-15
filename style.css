@@ -46,16 +46,17 @@ p{
 
 .logo
 {
+	float: left;
 	color: seagreen;
 	font-size: 30px;
 	text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 	
 }
 .container{
-   max-width: 1200px;
+   max-width: 1400px;
    margin: auto;
-   padding-left: 25px;
-   padding-right: 25px;
+   padding-left: 0px;
+   padding-right: 0px;
 }
 
 .main-hero{
@@ -63,6 +64,87 @@ p{
 	height: 500px;
 	object-fit: cover;
 }
+/* Search button styling */
+
+.desktop-query {
+    width: 400px;
+    float: left;
+    line-height: 0;
+    margin: 20px 20px 20px 60px;
+    position: relative;
+    }
+
+    .desktop-query>input.desktop-searchBar {
+    display: inline-block;
+    float: left;
+    font-size: 14px;
+    height: 20px;
+    line-height: 24px;
+    width: 90%;
+    color: #696e79;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 8px 10px 10px;
+    margin: 0;
+    outline: 0;
+    border: 1px solid #f5f5f6;
+    border-radius: 0 4px 4px 0;
+    border-left: 0;
+    background: #f5f5f6;
+}
+
+a.desktop-submit {
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    display: inline-block;
+    height: 28px;
+    width: 40px;
+    text-align: center;
+    padding: 8px 0 2px;
+    background: #f5f5f6;
+    border: 1px solid #f5f5f6;
+    border-right: none;
+    border-radius: 4px 0 0 4px;
+    position: absolute;
+    left: -41px;
+}
+
+a:active, a:hover {
+    outline-width: 0;
+}
+
+.desktop-caret, .desktop-iconSearch {
+    -webkit-transform: scale(.7);
+    transform: scale(.7);
+}
+.desktop-iconSearch {
+    display: inline-block;
+}
+.sprites-search {
+    width: 21px;
+    height: 21px;
+    background-position: -754px 0;
+}
+.myntraweb-sprite {
+    background: url(https://constant.myntassets.com/web/assets/img/b8817bd3-5993-48e4-9771-92e4e56…-MyntraWeb-Sprite.png);
+    background-size: 1404px 105px;
+    display: inline-block;
+}
+*, :after, :before {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.navbar input[type=text] {
+  float: center;
+  padding: 6px;
+  border: ridge;
+  margin-top: 8px;
+  margin-right: 30px;
+  font-size: 17px;
+}
+
+
 
 /* Change the link color to #111 (black) on hover  */
 nav ul li a:hover {
@@ -71,9 +153,12 @@ nav ul li a:hover {
 } 
 
 .sub-hero{
-	margin: 0 auto;
+	margin: 0 10px;
 	display: flex;
 	justify-content: space-around;
+	align-content: center;
+	overflow: auto;
+	padding: 10px 10px 10px 10px;
 	}
 
 
@@ -169,6 +254,92 @@ color: #00b6ce;
   	top: -1px;
 }
 .droppable:hover .mega-menu {display: flex;}
+
+footer{
+	background-color: whitesmoke;
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	color: #555;
+	padding: 50px 50px 60px 50px;
+	margin-top: 50px;
+	
+}
+
+.foot-container{
+	display: block;
+	padding: 0px;
+	position: relative;
+}
+
+.foot-container ul{
+	display: block;
+	list-style-type: none;
+  
+}
+
+ .foot-container ul li {
+    display: block;
+ 	margin-right: 10px;
+  
+}
+
+.foot-container a {
+  color: black;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #555;
+
+}
+
+ .foot-container p{
+	color: #555;
+
+}
+
+.foot-container h4{
+	color: teal;
+	text-align: relative;
+
+}
+
+.row{
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ justify-content: space-around;
+
+}
+
+
+.foot-container .col-3{
+	padding-top: 10px;
+   flex-basis: 33%;
+  min-width: 300px;
+  
+}
+
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.desclaim-foot{
+	text-align: center;
+	padding-top: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
 
 /*.mega-menu:hover  .mega-menu ul li{display: block;} 
 
